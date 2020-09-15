@@ -1,9 +1,9 @@
 exports.handler = function(event, context, callback) {
 
   const secretContent = `
-       <h3>This is secret area</h3>
-       <p>Capacitor blocks DC and passes AC</p>
-       <p>Inductor blocks AC and passes DC</p>
+       This is secret area
+       Capacitor blocks DC and passes AC
+       Inductor blocks AC and passes DC
   `
   let body
 
@@ -13,7 +13,7 @@ exports.handler = function(event, context, callback) {
     body = {}
   }
 
-  if (body.password = "shree") {
+  if (body.password == "shree") {
     callback(null, {
       statusCode: 200,
       body: secretContent

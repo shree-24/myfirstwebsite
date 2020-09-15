@@ -1,7 +1,6 @@
 exports.handler = function(event, context, callback) {
 
   const secretContent = `
-       This is secret area
        Capacitor blocks DC and passes AC
        Inductor blocks AC and passes DC
   `
